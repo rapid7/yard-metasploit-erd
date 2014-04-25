@@ -12,6 +12,7 @@ SimpleCov.configure do
 
   # Rake tasks aren't tested with rspec
   add_filter 'Rakefile'
+  add_filter 'lib/tasks'
 
   #
   # Changed Files in Git Group
