@@ -1,4 +1,4 @@
-# YARD::Metasploit::ERD
+# YARD::Metasploit::ERD [![Build Status](https://travis-ci.org/rapid7/yard-metasploit-erd.svg?branch=feature/gem-skeleton)](https://travis-ci.org/rapid7/yard-metasploit-erd)
 
 TODO: Write a gem description
 
