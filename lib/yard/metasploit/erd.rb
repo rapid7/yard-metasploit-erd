@@ -1,9 +1,11 @@
 require "yard/metasploit/erd/version"
 
-module Yard
+# namespace inherited from `yard` gem itself
+module YARD
+  # namespace to match primary gem, `metasploit-erd`, that is used by this yard plugin.
   module Metasploit
-    module Erd
-      # Your code goes here...
+    # namespace to match primary gem, `metasploit-erd`, that is used by this yard plugin.
+    module ERD
     end
   end
 end
