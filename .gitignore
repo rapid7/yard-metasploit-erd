@@ -24,3 +24,6 @@ pkg
 
 # compiled ruby from Rubinius
 *.rbc
+
+# RVM
+.rvmrc
