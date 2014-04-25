@@ -1,8 +1,8 @@
 require "yard/metasploit/erd/version"
 
-module Yard
+module YARD
   module Metasploit
-    module Erd
+    module ERD
       # Your code goes here...
     end
   end

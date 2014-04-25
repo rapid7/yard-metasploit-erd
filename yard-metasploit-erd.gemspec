@@ -5,7 +5,7 @@ require 'yard/metasploit/erd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "yard-metasploit-erd"
-  spec.version       = Yard::Metasploit::Erd::VERSION
+  spec.version       = YARD::Metasploit::ERD::VERSION
   spec.authors       = ["Luke Imhoff"]
   spec.email         = ["luke_imhoff@rapid7.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.5"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency 'bundler', '~> 1.5'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
 end
