@@ -1,6 +1,14 @@
 # YARD::Metasploit::ERD [![Build Status](https://travis-ci.org/rapid7/yard-metasploit-erd.svg?branch=feature/gem-skeleton)](https://travis-ci.org/rapid7/yard-metasploit-erd)[![Code Climate](https://codeclimate.com/github/rapid7/yard-metasploit-erd.png)](https://codeclimate.com/github/rapid7/yard-metasploit-erd)[![Coverage Status](https://coveralls.io/repos/rapid7/yard-metasploit-erd/badge.png)](https://coveralls.io/r/rapid7/yard-metasploit-erd)[![Dependency Status](https://gemnasium.com/rapid7/yard-metasploit-erd.png)](https://gemnasium.com/rapid7/yard-metasploit-erd)[![Gem Version](https://badge.fury.io/rb/yard-metasploit-erd.png)](http://badge.fury.io/rb/yard-metasploit-erd)
 
-TODO: Write a gem description
+`yard-metasploit-erd` is a [YARD](yardoc.org) plugin that automatically inserts an "Entity-Relationship Diagram"
+subsection containing a PNG Entity-Relationship Diagram for each Module that contains `ActiveRecord::Base` subclasses
+and for each `ActiveRecord::Base` subclass.  For namespace Modules, the diagrams are restricted to the
+`ActiveRecord::Base` subclasses in that namespace and the transitive closure of those classes `belongs_to`
+relationships.  For `ActiveRecord::Base` subclasses the diagram is restircted to the transitive closure of its
+`belongs_to` relationships.
+
+Using the `belongs_to` transitive closure means that all foreign keys are mapped to primary
+keys, so any diagram's namespace or class could be extracted to another gem without leaving dangling foreign keys.
 
 ## Versioning
 
@@ -10,7 +18,7 @@ and the `PRERELEASE` section of `YARD::Metasploit::ERD::VERSION` does not exist.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's `Gemfile`:
 
     gem 'yard-metasploit-erd'
 
@@ -24,7 +32,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this line to your application's `.yardopts`
+
+    --plugin yard-metasploit-erd
 
 ## Contributing
 
