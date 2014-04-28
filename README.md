@@ -1,8 +1,8 @@
 # YARD::Metasploit::ERD [![Build Status](https://travis-ci.org/rapid7/yard-metasploit-erd.svg?branch=feature/gem-skeleton)](https://travis-ci.org/rapid7/yard-metasploit-erd)[![Code Climate](https://codeclimate.com/github/rapid7/yard-metasploit-erd.png)](https://codeclimate.com/github/rapid7/yard-metasploit-erd)[![Coverage Status](https://coveralls.io/repos/rapid7/yard-metasploit-erd/badge.png)](https://coveralls.io/r/rapid7/yard-metasploit-erd)[![Dependency Status](https://gemnasium.com/rapid7/yard-metasploit-erd.png)](https://gemnasium.com/rapid7/yard-metasploit-erd)[![Gem Version](https://badge.fury.io/rb/yard-metasploit-erd.png)](http://badge.fury.io/rb/yard-metasploit-erd)
 
 `yard-metasploit-erd` is a [YARD](yardoc.org) plugin that automatically inserts an "Entity-Relationship Diagram"
-subsection containing a PNG Entity-Relationship Diagram for each Module that contains `ActiveRecord::Base` subclasses
-and for each `ActiveRecord::Base` subclass.
+subsection containing a PNG Entity-Relationship Diagram for the entire schema (on the index page), for each Module that
+contains `ActiveRecord::Base` subclasses and for each `ActiveRecord::Base` subclass.
 
 For namespace Modules, the diagrams are restricted to the `ActiveRecord::Base` subclasses in that namespace and the
 transitive closure of those classes `belongs_to` relationships.
