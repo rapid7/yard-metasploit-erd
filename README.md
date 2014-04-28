@@ -4,7 +4,7 @@
 subsection containing a PNG Entity-Relationship Diagram for each Module that contains `ActiveRecord::Base` subclasses
 and for each `ActiveRecord::Base` subclass.  For namespace Modules, the diagrams are restricted to the
 `ActiveRecord::Base` subclasses in that namespace and the transitive closure of those classes `belongs_to`
-relationships.  For `ActiveRecord::Base` subclasses the diagram is restircted to the transitive closure of its
+relationships.  For `ActiveRecord::Base` subclasses the diagram is restricted to the transitive closure of its
 `belongs_to` relationships.
 
 Using the `belongs_to` transitive closure means that all foreign keys are mapped to primary
