@@ -10,7 +10,8 @@
 
 # YARD
 .yardoc
-doc
+/doc/*
+!/doc/example
 
 # simplecov
 coverage

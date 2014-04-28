@@ -2,13 +2,20 @@
 
 `yard-metasploit-erd` is a [YARD](yardoc.org) plugin that automatically inserts an "Entity-Relationship Diagram"
 subsection containing a PNG Entity-Relationship Diagram for each Module that contains `ActiveRecord::Base` subclasses
-and for each `ActiveRecord::Base` subclass.  For namespace Modules, the diagrams are restricted to the
-`ActiveRecord::Base` subclasses in that namespace and the transitive closure of those classes `belongs_to`
-relationships.  For `ActiveRecord::Base` subclasses the diagram is restricted to the transitive closure of its
-`belongs_to` relationships.
+and for each `ActiveRecord::Base` subclass.
 
-Using the `belongs_to` transitive closure means that all foreign keys are mapped to primary
-keys, so any diagram's namespace or class could be extracted to another gem without leaving dangling foreign keys.
+For namespace Modules, the diagrams are restricted to the `ActiveRecord::Base` subclasses in that namespace and the
+transitive closure of those classes `belongs_to` relationships.
+
+![Mdm::Module::Author ERD](doc/example/images/mdm/module/author.erd.png)
+
+For `ActiveRecord::Base` subclasses the diagram is restricted to the transitive closure of its `belongs_to`
+relationships.
+
+![Mdm::Module namespace ERD](doc/example/images/mdm/module.erd.png)
+
+Using the `belongs_to` transitive closure means that all foreign keys are mapped to primary keys, so any diagram's
+namespace or class could be extracted to another gem without leaving dangling foreign keys.
 
 ## Versioning
 
