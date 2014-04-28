@@ -43,11 +43,14 @@ Add this line to your application's `.yardopts`
 
     --plugin yard-metasploit-erd
 
-Ensure your `ActiveRecord::Base` subclasses are loaded when YARD runs by making the `environment` task a prerequisite of
-the `yard:doc` task:
+Ensure your `ActiveRecord::Base` subclasses are loaded when YARD runs by eager loading before the `yard:doc` task runs:
 
     # lib/tasks/yard.rake
-    task 'yard:doc' => :environment
+    task 'yard:doc' => :eager_load
+
+    task eager_load: :environment do
+      Rails.application.eager_load!
+    end
 
 ## Contributing
 
