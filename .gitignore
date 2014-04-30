@@ -7,10 +7,12 @@
 # rvm files should not be checked in as multiple rubies are supported in the CI builds
 .ruby-gemset
 .ruby-version
+.rvmrc
 
 # YARD
 .yardoc
-doc
+/doc/*
+!/doc/example
 
 # simplecov
 coverage
@@ -24,6 +26,3 @@ pkg
 
 # compiled ruby from Rubinius
 *.rbc
-
-# RVM
-.rvmrc
