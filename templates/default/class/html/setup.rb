@@ -1,3 +1,9 @@
+#
+# Gems
+#
+
+require 'metasploit/erd'
+
 def active_record?
   inheritance_tree = object.inheritance_tree
   inheritance_titles = inheritance_tree.map(&:title)

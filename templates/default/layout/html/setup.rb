@@ -1,3 +1,8 @@
+#
+# Gems
+#
+
+require 'metasploit/erd'
 require 'rails_erd/domain'
 
 def init
