@@ -5,7 +5,7 @@ require 'yard/metasploit/erd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'yard-metasploit-erd'
-  spec.version       = YARD::Metasploit::ERD::VERSION
+  spec.version       = YARD::Metasploit::ERD::GEM_VERSION
   spec.authors       = ['Luke Imhoff']
   spec.email         = ['luke_imhoff@rapid7.com']
   spec.summary       = 'YARD plugin that add Metasploit::ERDs to namespaces and classes'
