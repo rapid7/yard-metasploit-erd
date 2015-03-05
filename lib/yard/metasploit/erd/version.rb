@@ -12,9 +12,9 @@ module YARD
         # The minor version number, scoped to the {MAJOR} version number.
         MINOR = 0
         # The patch version number, scoped to the {MAJOR} and {MINOR} version numbers.
-        PATCH = 3
-        # The prerelease version, scoped to the {MAJOR}, {MINOR}, and {PATCH} version numbers.
-        PRERELEASE = 'metasploit-version'
+        PATCH = 4
+        # The pre-release version, scoped to {MAJOR}, {MINOR}, and {PATCH} version numbers.
+        PRERELEASE = 'required-keyword-arguments'
 
         #
         # Module Methods
