@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require 'active_support/core_ext/object/blank'
 
 RSpec.describe YARD::Metasploit::ERD::Version do
