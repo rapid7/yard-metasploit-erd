@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe YARD::Metasploit::ERD do
+RSpec.describe YARD::Metasploit::ERD do
   context 'CONSTANTS' do
     context 'VERSION' do
       subject(:version) do
