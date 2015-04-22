@@ -40,8 +40,14 @@ Make your changes or however many commits you like, committing each with `git co
 
 ### Pre-Pull Request Testing
 
+#### Specs
 1. Run specs one last time before opening the Pull Request: `rake spec`
 2. Verify there was no failures.
+
+#### Documentation
+1. Run yard one last time before opening the Pull Request: `rake yard`
+2. Verify there are no warnings indicating you didn't mistype any links or tags.
+3. Verify there is 100% documented indicating you documented all the new Modules, Classes, Constants, and Methods.
 
 ### Push
 
@@ -60,6 +66,11 @@ Push your branch to your fork on gitub: `git push TYPE/ISSUE/SUMMARY`
 ## `rake spec`
 - [ ] `rake spec`
 - [ ] VERIFY no failures
+
+## `rake yard`
+- [ ] `rake yard`
+- [ ] VERIFY no warnings
+- [ ] VERIFY 100% documented
 ```
 
 You should also include at least one scenario to manually check the changes outside of specs.
