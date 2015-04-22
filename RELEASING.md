@@ -68,12 +68,6 @@ decide to remain pre-1.0.0 or (2) advance to 1.0.0.
 
 ## Release to rubygems.org
 
-## jruby
-- [ ] `rvm use jruby@yard-metasploit-erd`
-- [ ] `rm Gemfile.lock`
-- [ ] `bundle install`
-- [ ] `rake release`
-
 ## ruby-2.1
 - [ ] `rvm use ruby-2.1@yard-metasploit-erd`
 - [ ] `rm Gemfile.lock`
