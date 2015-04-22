@@ -1,5 +1,5 @@
+cache: bundler
 language: ruby
 rvm:
   - 2.1
-  - jruby
-  - rbx
+sudo: false
