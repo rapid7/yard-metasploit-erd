@@ -19,15 +19,17 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
+  spec.required_ruby_version = '>= 2.1'
+
   spec.add_development_dependency 'bundler', '~> 1.5'
+  spec.add_development_dependency 'metasploit-version', '~> 0.1.3'
+  spec.add_development_dependency 'metasploit-yard', '~> 1.0'
   spec.add_development_dependency 'rake', '~> 10.3'
-  spec.add_development_dependency 'rspec', '~> 2.14'
+  spec.add_development_dependency 'rspec', '~> 3.1'
 
   # Generates namespace Module and Class<ActiveRecord::Base> specific ERDs for use in templates
   spec.add_runtime_dependency 'metasploit-erd'
   # RailsERD::Domain is used directly to generate the _index.html ERD.
   spec.add_runtime_dependency 'rails-erd'
-  # documentation
-  # 0.8.7.4 has a bug where setters are not documented when @!attribute is used
-  spec.add_runtime_dependency 'yard', '<= 0.8.7.4'
+  spec.add_runtime_dependency 'yard'
 end
