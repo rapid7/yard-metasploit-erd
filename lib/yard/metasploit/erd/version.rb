@@ -1,6 +1,6 @@
-module YARD
+module Yard
   module Metasploit
-    module ERD
+    module Erd
       # Holds components of {VERSION} as defined by {http://semver.org/spec/v2.0.0.html semantic versioning v2.0.0}.
       module Version
         #
@@ -11,10 +11,10 @@ module YARD
         MAJOR = 1
         # The minor version number, scoped to the {MAJOR} version number.
         MINOR = 0
-        # The patch number, scoped to the {MINOR} version number.
+        # The patch version number, scoped to the {MAJOR} and {MINOR} version numbers.
         PATCH = 0
-        # the prerelease identifier
-        PRERELEASE = 'rails-4.0'
+        # The prerelease version, scoped to the {MAJOR}, {MINOR}, and {PATCH} version numbers.
+        PRERELEASE = 'releasing-1-0-0-plus'
 
         # The full version string, including the {YARD::Metasploit::ERD::Version::MAJOR},
         # {YARD::Metasploit::ERD::Version::MINOR}, {YARD::Metasploit::ERD::Version::PATCH}, and optionally, the
