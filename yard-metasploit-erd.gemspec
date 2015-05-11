@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.1'
 
   # Generates namespace Module and Class<ActiveRecord::Base> specific ERDs for use in templates
-  spec.add_runtime_dependency 'metasploit-erd', '0.1.0'
+  spec.add_runtime_dependency 'metasploit-erd', '~> 1.0'
   # RailsERD::Domain is used directly to generate the _index.html ERD.
   spec.add_runtime_dependency 'rails-erd'
   spec.add_runtime_dependency 'yard'
