@@ -14,7 +14,7 @@ module YARD
         # The patch version number, scoped to the {MAJOR} and {MINOR} version numbers.
         PATCH = 0
         # The prerelease version, scoped to the {MAJOR}, {MINOR}, and {PATCH} version numbers.
-        PRERELEASE = 'releasing-1-0-0-plus'
+        PRERELEASE = 'rails-4.0'
 
         # The full version string, including the {YARD::Metasploit::ERD::Version::MAJOR},
         # {YARD::Metasploit::ERD::Version::MINOR}, {YARD::Metasploit::ERD::Version::PATCH}, and optionally, the
