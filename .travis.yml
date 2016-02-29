@@ -1,6 +1,11 @@
+group: stable
+sudo: false
 cache: bundler
+addons:
+  apt:
+    packages:
+      - graphviz
 language: ruby
 rvm:
-  - 2.1
+  - 2.2
 script: bundle exec rake spec yard
-sudo: false

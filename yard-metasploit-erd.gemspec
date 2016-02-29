@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'metasploit-yard', '~> 1.0'
   spec.add_development_dependency 'rake', '~> 10.3'
   spec.add_development_dependency 'rspec', '~> 3.1'
+  spec.add_development_dependency 'codeclimate-test-reporter'
 
   # Generates namespace Module and Class<ActiveRecord::Base> specific ERDs for use in templates
   spec.add_runtime_dependency 'metasploit-erd', '~> 1.0'
