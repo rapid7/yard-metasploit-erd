@@ -1,22 +1,16 @@
 require 'bundler/setup'
 
 # require before 'metasploit/erd' so coverage is shown for files required by 'yard/metasploit/erd'
-require "codeclimate-test-reporter"
 require 'simplecov'
 require 'coveralls'
 
 if ENV['TRAVIS'] == 'true'
   # don't generate local report as it is inaccessible on travis-ci, which is why coveralls is being used.
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-    Coveralls::SimpleCov::Formatter,
-    CodeClimate::TestReporter::Formatter
-  ]
+  SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 else
-  # either generate the local report
   SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-    Coveralls::SimpleCov::Formatter,
-    SimpleCov::Formatter::HTMLFormatter,
-    CodeClimate::TestReporter::Formatter
+      # either generate the local report
+      SimpleCov::Formatter::HTMLFormatter
   ]
 end
 
