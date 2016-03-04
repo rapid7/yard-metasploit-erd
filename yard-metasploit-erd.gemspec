@@ -5,7 +5,7 @@ require 'yard/metasploit/erd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'yard-metasploit-erd'
-  spec.version       = YARD::Metasploit::ERD::GEM_VERSION
+  spec.version       = YARD::Metasploit::ERD::VERSION
   spec.authors       = ['Luke Imhoff']
   spec.email         = ['luke_imhoff@rapid7.com']
   spec.summary       = 'YARD plugin that add Metasploit::ERDs to namespaces and classes'
@@ -22,8 +22,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.1'
 
   spec.add_development_dependency 'bundler', '~> 1.5'
-  spec.add_development_dependency 'metasploit-version', '~> 0.1.3'
-  spec.add_development_dependency 'metasploit-yard'#, '~> 1.0' commenting out to use the github version
+  spec.add_development_dependency 'metasploit-yard', '~> 1.1'
   spec.add_development_dependency 'rake', '~> 10.3'
   spec.add_development_dependency 'rspec', '~> 3.1'
   # spec.add_development_dependency 'codeclimate-test-reporter'
