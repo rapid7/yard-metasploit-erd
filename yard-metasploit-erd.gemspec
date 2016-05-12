@@ -22,13 +22,13 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.1'
 
   spec.add_development_dependency 'bundler', '~> 1.5'
-  #spec.add_development_dependency 'metasploit-yard'#, '~> 1.1'  commenting out to use the github version
+  spec.add_development_dependency 'metasploit-yard'
   spec.add_development_dependency 'rake', '~> 10.3'
   spec.add_development_dependency 'rspec', '~> 3.1'
   # spec.add_development_dependency 'codeclimate-test-reporter'
 
   # Generates namespace Module and Class<ActiveRecord::Base> specific ERDs for use in templates
-  spec.add_runtime_dependency 'metasploit-erd'#, '~> 1.0' commenting out to use the github version
+  spec.add_runtime_dependency 'metasploit-erd'
   # RailsERD::Domain is used directly to generate the _index.html ERD.
   spec.add_runtime_dependency 'rails-erd'
   spec.add_runtime_dependency 'yard'
