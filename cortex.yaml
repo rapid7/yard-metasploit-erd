@@ -1,0 +1,16 @@
+---
+info:
+  title: Yard Metasploit Erd
+  description: YARD plugin that uses metasploit-erd to add Entity-Relationship Diagrams
+    to each namespace Module and ActiveRecord::Base subclass's documentation.
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/yard-metasploit-erd
+  x-cortex-tag: yard-metasploit-erd
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: metasploit
+openapi: 3.0.1
+servers:
+- url: "/"
